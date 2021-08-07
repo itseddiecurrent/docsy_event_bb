@@ -9,8 +9,43 @@ description: >
 ---
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+API Tutorial
 {{% /pageinfo %}}
 
-Tutorials are **complete worked examples** made up of **multiple tasks** that guide the user through a relatively simple but realistic scenario: building an application that uses some of your project’s features, for example. If you have already created some Examples for your project you can base Tutorials on them. This section is **optional**. However, remember that although you may not need this section at first, having tutorials can be useful to help your users engage with your example code, especially if there are aspects that need more explanation than you can easily provide in code comments.
 
+​
+In order to make your own API call, you need to first determine the authentication requirement and 
+​
+parameters of the specific API endpoint that you are calling. As a recap, there are five basic types of
+ 
+API Endpoints:
+​
+* <span style="color:blue;">GET</span>: Retrieves a resource</p>
+* <span style="color:green;">POST</span>: Creates a resource</p>
+* <span style="color:orange;">PUT</span>: Updates or creates within an existing resource</p>
+* <span style="color:cyan;">PATCH</span>: Partially modifies an existing resource</p>
+* <span style="color:red;">DELETE</span>: Removes the resource</p>
+
+## <span style="color:blue;">GET</span> Endpoints
+
+Let's take a look at an example, a GET endpoint from the [Events Building Block development server](https://api-dev.rokwire.illinois.edu/docs/)  :
+
+<span style="color:blue;">GET</span>/events/{event_id}search for events with given event_id </p>
+
+Authentication requirement: a valid API key.
+​
+Parameters: event_id (string): ID of the event you are looking for.
+​
+When we access this endpoint, we need to first make sure we authenticate the endpoint properly. In this
+ 
+case, the requirement for authentication is a valid API key that you should have gotten access to. 
+​
+Click on the "Authorize" button at the top right corner
+​
+and enter your API key and/or ID token.
+
+Then, click on the "Try it out" button of the endpoint and we will be given a blank
+ 
+to put in our parameter;
+
+Then search by typing in a specific event ID and hitting "Execute", for example, we want to look for the event corresponding to the event ID "5d9b8e953a4f03000be0ec45":
