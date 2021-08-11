@@ -48,4 +48,23 @@ Then, click on the "Try it out" button of the endpoint and we will be given a bl
  
 to put in our parameter;
 
+![](pic1.png)
+
 Then search by typing in a specific event ID and hitting "Execute", for example, we want to look for the event corresponding to the event ID "5d9b8e953a4f03000be0ec45":
+
+![](pic2.png)
+
+## Error Handling
+
+More likely than not, when you are trying to make your API call the first time, you will run into some unexpected. In order to understand and handle your error, you want to get yourself familiar with different types of error codes.
+
+|Error code|Description|
+|----------|-----------|
+|200|searching results displayed (for GET, PATCH, PUT endpoints)|
+|201|successful operation (for POST endpoints)|
+|202|successful deletion (for DELETE endpoints)|
+|400|invalid ID supplied (check your ID token)|
+|401|unauthorized (check your API key)|
+|404|not found (for GET endpoints)|
+|405|invalid input| 
+|500|internal error|
