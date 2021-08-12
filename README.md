@@ -49,6 +49,12 @@ Once you've made your working copy of the site repo, from the repo root folder, 
 hugo server
 ```
 
+Note that if you get a "pipe failed" error, you can try adding a flag to the command
+
+```
+hugo server --watch=false
+```
+
 ## Running a container locally
 
 You can run docsy-example inside a [Docker](https://docs.docker.com/)
