@@ -37,6 +37,10 @@ If you want to do SCSS edits and want to publish these, you need to install `Pos
 npm install
 ```
 
+## Current contribution
+
+This website provides a general documentation on the Event Building Block API on Rokwire. It is made using the docsy template https://github.com/google/docsy-example. The contribution is mostly in content/en folder. We did not make edits in other folders than en in content from the template.
+
 ## Running the website locally
 
 Building and running the site locally requires a recent `extended` version of [Hugo](https://gohugo.io).
