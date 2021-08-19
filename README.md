@@ -59,6 +59,8 @@ Note that if you get a "pipe failed" error, you can try adding a flag to the com
 hugo server --watch=false
 ```
 
+Then you should be able to open the website built on //localhost:1313. Note that if you have used the --watch=false flag, you must restart the runtime after committing changes to your code to update on the localhost. VSCode is one of the good options to edit the backend.
+
 ## Running a container locally
 
 You can run docsy-example inside a [Docker](https://docs.docker.com/)
